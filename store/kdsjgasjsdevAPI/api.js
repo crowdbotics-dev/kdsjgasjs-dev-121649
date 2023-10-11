@@ -29,6 +29,24 @@ function api_v1_fghj_destroy(payload) {
 function api_v1_login_create(payload) {
   return kdsjgasjsdevAPI.post(`/api/v1/login/`, payload)
 }
+function api_v1_sdfddfbfd_list(payload) {
+  return kdsjgasjsdevAPI.get(`/api/v1/sdfddfbfd/`)
+}
+function api_v1_sdfddfbfd_create(payload) {
+  return kdsjgasjsdevAPI.post(`/api/v1/sdfddfbfd/`, payload)
+}
+function api_v1_sdfddfbfd_retrieve(payload) {
+  return kdsjgasjsdevAPI.get(`/api/v1/sdfddfbfd/${payload.id}/`)
+}
+function api_v1_sdfddfbfd_update(payload) {
+  return kdsjgasjsdevAPI.put(`/api/v1/sdfddfbfd/${payload.id}/`, payload)
+}
+function api_v1_sdfddfbfd_partial_update(payload) {
+  return kdsjgasjsdevAPI.patch(`/api/v1/sdfddfbfd/${payload.id}/`, payload)
+}
+function api_v1_sdfddfbfd_destroy(payload) {
+  return kdsjgasjsdevAPI.delete(`/api/v1/sdfddfbfd/${payload.id}/`)
+}
 function api_v1_signup_create(payload) {
   return kdsjgasjsdevAPI.post(`/api/v1/signup/`, payload)
 }
@@ -74,6 +92,12 @@ export const apiService = {
   api_v1_fghj_partial_update,
   api_v1_fghj_destroy,
   api_v1_login_create,
+  api_v1_sdfddfbfd_list,
+  api_v1_sdfddfbfd_create,
+  api_v1_sdfddfbfd_retrieve,
+  api_v1_sdfddfbfd_update,
+  api_v1_sdfddfbfd_partial_update,
+  api_v1_sdfddfbfd_destroy,
   api_v1_signup_create,
   rest_auth_login_create,
   rest_auth_logout_create,
