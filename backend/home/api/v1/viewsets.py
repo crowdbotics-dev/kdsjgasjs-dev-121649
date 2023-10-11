@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from home.models import FGHj,FGHj,FGHj
-from .serializers import FGHjSerializer,FGHjSerializer,FGHjSerializer
+from home.models import FGHj,Sdfddfbfd,FGHj,Sdfddfbfd,FGHj,Sdfddfbfd
+from .serializers import FGHjSerializer,SdfddfbfdSerializer,FGHjSerializer,SdfddfbfdSerializer,FGHjSerializer,SdfddfbfdSerializer
 from rest_framework import authentication
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from rest_framework.viewsets import ModelViewSet, ViewSet
@@ -37,3 +37,8 @@ class FGHjViewSet(viewsets.ModelViewSet):
     serializer_class = FGHjSerializer
     authentication_classes = (authentication.SessionAuthentication, authentication.TokenAuthentication)
     queryset = FGHj.objects.all()
+
+class SdfddfbfdViewSet(viewsets.ModelViewSet):
+    serializer_class = SdfddfbfdSerializer
+    authentication_classes = (authentication.SessionAuthentication, authentication.TokenAuthentication)
+    queryset = Sdfddfbfd.objects.all()

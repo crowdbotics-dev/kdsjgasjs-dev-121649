@@ -19,6 +19,6 @@ class User(AbstractUser):
     everything that relates with an `User` is represented by this model.
     """
     name = models.CharField(null=True,blank=True,max_length=255,)
-    rel_fghj_n_n = models.ManyToManyField("home.FGHj",blank=True,related_name="user_rel_fghj_n_n",null=True,)
+    rel_fghj_n_n = models.ManyToManyField("home.FGHj",null=True,blank=True,related_name="user_rel_fghj_n_n",)
     def get_absolute_url(self):
         return reverse('users:detail', kwargs={'username': self.username})
